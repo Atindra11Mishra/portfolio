@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 import { RESUME_URL } from '@/lib/constants'
 
 const navLinks = [
@@ -46,9 +47,13 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group flex-shrink-0">
-            <span className="w-7 h-7 rounded-lg bg-violet-500/20 border border-violet-500/30 flex items-center justify-center text-sm font-black text-violet-300 group-hover:bg-violet-500/30 group-hover:shadow-lg group-hover:shadow-violet-500/20 transition-all duration-200">
-              A
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Atindra Mishra"
+              width={32}
+              height={32}
+              className="rounded-lg group-hover:opacity-90 transition-opacity duration-200"
+            />
             <div className="hidden sm:block">
               <p className="text-[11px] font-mono tracking-[0.18em] uppercase text-neutral-200 group-hover:text-white transition-colors leading-none">
                 Atindra Mishra
