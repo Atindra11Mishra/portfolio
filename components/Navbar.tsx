@@ -47,13 +47,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Atindra Mishra"
-              width={32}
-              height={32}
-              className="rounded-lg group-hover:opacity-90 transition-opacity duration-200"
-            />
+            
             <div className="hidden sm:block">
               <p className="text-[11px] font-mono tracking-[0.18em] uppercase text-neutral-200 group-hover:text-white transition-colors leading-none">
                 Atindra Mishra
